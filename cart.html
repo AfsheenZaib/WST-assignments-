@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - Amazon Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 text-white flex justify-between items-center">
+    <div class="text-2xl font-bold">Amazon</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="signin.html" class="hover:underline">Sign In</a>
+    </div>
+  </nav>
+
+  <div class="max-w-5xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+
+    <h2 class="text-3xl font-bold mb-6">Your Cart</h2>
+
+    <!-- Cart Items List -->
+    <div class="space-y-6">
+      <!-- Cart Item Example -->
+      <div class="flex items-center justify-between border-b pb-4">
+        <div class="flex items-center gap-4">
+          <img src="shoe1.jpg" alt="Shoe 1" class="w-24 h-24 object-cover rounded">
+          <div>
+            <h3 class="text-lg font-semibold">Comfort Shoe 1</h3>
+            <p class="text-yellow-600 font-bold">$19.99</p>
+            <button class="text-red-500 text-sm mt-1 hover:underline">Remove</button>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="bg-gray-300 px-3 py-1 rounded">-</button>
+          <span>1</span>
+          <button class="bg-gray-300 px-3 py-1 rounded">+</button>
+        </div>
+      </div>
+
+      <!-- Another Item -->
+      <div class="flex items-center justify-between border-b pb-4">
+        <div class="flex items-center gap-4">
+          <img src="shoe2.jpg" alt="Shoe 2" class="w-24 h-24 object-cover rounded">
+          <div>
+            <h3 class="text-lg font-semibold">Comfort Shoe 2</h3>
+            <p class="text-yellow-600 font-bold">$24.99</p>
+            <button class="text-red-500 text-sm mt-1 hover:underline">Remove</button>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="bg-gray-300 px-3 py-1 rounded">-</button>
+          <span>2</span>
+          <button class="bg-gray-300 px-3 py-1 rounded">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtotal Section -->
+    <div class="flex justify-end mt-6">
+      <div class="text-right">
+        <p class="text-xl font-semibold">Subtotal (3 items): <span class="text-yellow-600">$69.97</span></p>
+        <a href="checkout.html" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded">Proceed to Checkout</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
